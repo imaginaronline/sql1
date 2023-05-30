@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Data Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+ 
+</head>
+
+<body>
+  <div class="card">
+    <h1>User Data Dashboard</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Mobile Number</th>
+          <th>Email</th>
+          <th>Pincode</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(function(user) { %>
+          <tr>
+            <td>
+              <%= user.id %>
+            </td>
+            <td>
+              <%= user.name %>
+            </td>
+            <td>
+              <%= user.mobile %>
+            </td>
+            <td>
+              <%= user.email %>
+            </td>
+            <td>
+              <%= user.pincode %>
+            </td>
+            <td>
+              <%= user.state %>
+            </td>
+            <td>
+              <%= user.village %>
+            </td>
+          </tr>
+          <% }); %>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
